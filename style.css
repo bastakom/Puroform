@@ -1,0 +1,30 @@
+/**
+ * Theme Name: Project name.
+ * Author: Client name
+ * Version: 99.0
+**/
+
+.section-text-image .img-cell {
+	min-height: 40vh;
+}
+
+.single-project .breadcrumbs_page span > span > span {
+	font-size: 0;
+}
+.single-project .breadcrumbs_page span > span > span .breadcrumb_last {
+	font-size: 18px;
+}
+.single-project .breadcrumbs_page span > span > span > a {
+	display: none;
+}
+
+.gallery_section .cell_gallery {
+	text-align: center;
+}
+figure.point-cursor{
+	cursor: default;
+}
+
+.ninja-forms-form-wrap textarea{
+	font-family:futurabook!important;
+}

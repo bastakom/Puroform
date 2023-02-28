@@ -1,0 +1,138 @@
+.moblie_title{
+    @media screen and (max-width:800px){
+        font-size:22px !important;
+    }
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .moblie_section {
+        padding-top:50px !important;
+    }
+
+
+    .top_left {
+        top: 10px;
+        font-size: 20px;
+
+        left:39% !important;
+    }
+
+    .image-wrap{
+        font-size: 20px!important;
+    }
+
+    .about-section{
+        display:none;
+    }
+
+    .contact_text_div{
+        display:none;
+    }
+
+    .contact-cell{
+        max-width:100% !important;
+    }
+
+    .button{
+        min-width: 150px;
+    }
+
+
+    .menu-top-menu-container{
+        padding:30px;
+    }
+
+    .moblie_menu_open{
+        padding: 40px;
+    }
+
+    .header-menu .submenu-toggle{
+        background:transparent !important;
+    }
+
+    .underline{
+        background:transparent;
+    }
+
+    .lets_get{
+        background: white;
+        box-shadow: 0px 0px 12px -4px black;
+        padding: 0;
+        margin: 0 !important;
+        width: 100% !important;
+        padding-top: 20px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .form_contact_site{
+        padding: 10px !important;
+    }
+
+        
+}
+
+
+
+
+#scroll {
+    position: absolute;
+    right: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:transparent;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+    border: 1px solid $white;
+    &:before {
+        content: '';
+    	position: absolute;
+    	top: 50%;
+    	left: calc(50% - 1px);
+    	background-color: $white;
+        height: 24px;
+        width: 2px;
+        margin-top: -12px;
+        border-radius: 10px;
+    }
+    &:after {
+        content: '';
+    	position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        margin-top: -13px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: $white transparent transparent $white;
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+        border-radius: 2px;
+    }
+}
+//#scroll span {
+//    position:absolute;
+//    top:50%;
+//    left:50%;
+//    margin-left:-8px;
+//    margin-top:-12px;
+//    height:0;
+//    width:0;
+//    border:8px solid transparent;
+//    border-bottom-color:black;
+//}
+#scroll:hover {
+
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+

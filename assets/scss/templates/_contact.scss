@@ -1,0 +1,231 @@
+.contact {
+
+	article {
+		position: relative;
+		//background-size: 50% 100%;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: cover;
+		@media screen and (max-width:800px){
+			background-size:cover;
+		}
+		@include breakpoint(large) {
+		    &:before {
+		        content: '';
+		    	position: absolute;
+		    	top: 0;
+		    	right: 50%;
+		    	bottom: 0;
+		    	left: 0;
+		    	background-color: $white;
+		    	//z-index: -1;
+		    }
+		}
+	}
+	.lets_get {
+		position: relative;
+	}
+	.fa-home {
+		height: 48px;
+		max-height: 48px;
+		width: 48px;
+		min-width: 48px;
+		background-image: url('../images/home.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 28px auto;
+		font-size: 0;
+	}
+	.fa-envelope {
+		height: 48px;
+		max-height: 48px;
+		width: 48px;
+		min-width: 48px;
+		background-image: url('../images/letter.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 28px auto;
+		font-size: 0;
+	}
+	.fa-instagram {
+		height: 48px;
+		max-height: 48px;
+		width: 48px;
+		background-image: url('../images/instagram.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 28px auto;
+		font-size: 0;
+	}
+	.instagram_contactsite a.stay-tuned__link {
+		width: 48px;
+		height: 48px;
+	}
+}
+
+.contact__form {
+	margin-bottom: 50px;
+	.nf-form-content select.ninja-forms-field {
+		color: $white;
+	}
+}
+
+.contact__map-wrap {
+	margin-top: 50px;
+}
+
+.contact__map {
+	height: 450px;
+}
+
+.contact__content{
+	margin-bottom: 50px;
+}
+
+.contact-link {
+	position: relative;
+	padding-left: 30px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 0;
+		color: $main-color;
+		font-family: $fa;
+		font-weight: 900;
+		transform: translateY(-50%);
+	}
+
+	&--email {
+		&::before {
+			content: '\f0e0';
+		}
+	}
+
+	&--phone {
+		&::before {
+			content: '\f879';
+		}
+	}
+
+	&--address{
+		&::before {
+			content: '\f3c5';
+		}
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		text-transform: none;
+		font-family: 'futurabook' !important;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+.instagram_contactsite{
+	a.stay-tuned__link {
+		width: 40px;
+		height: 40px;
+		border: 1px solid black !important;}
+}
+
+.nf-field-description {
+	justify-content: center;
+	display: flex;
+	p {
+		width: 300px;
+		color: black;
+		font-size: 13px;
+		font-family: MerriweatherSans;
+	}
+}
+
+.checkbox-container.label-above label {
+    height: 15px !important;
+    margin: 0;
+    display: flex !important;
+    position: absolute !important;
+    left: 32%;
+}
+
+span#nf-form-title-2{
+	display:none;
+}
+
+
+.innerdiv-CTA {
+	width: 100%;
+    z-index: 99;
+	padding-left: 100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+
+.ninja-content  {width:70%;
+@media screen and (max-width:1000px){
+		width:100%;
+	}
+}
+.CTA-ninja {
+	padding-left: 0;
+    margin-left: 0;
+}
+.nf-form-content {
+	font-weight: 500;
+}
+.nf-form-content .list-select-wrap .nf-field-element>div, .nf-form-content input:not([type=button]), .nf-form-content textarea {
+	background: transparent!important;
+	box-shadow: none;
+	transition: all .5s;
+	margin: 0 auto;
+	color: white !important;
+	font-size: 18px !important;
+}
+.nf-form-title {text-align: left !important;}
+.nf-form-content label {color:white !important;
+	font-weight: 400!important;
+	line-height: 1.17;}
+
+
+.nf-field-element{text-align:left;}
+.nf-error .nf-error-msg{display:none;}
+.nf-error.field-wrap .nf-field-element:after{background:#daccb4 !important;}
+.nf-error .ninja-forms-field {
+    border: 1px solid black !important;
+}
+
+
+
+
+
+
+
+
+
+.header-menu.menu .submenu li>a {
+    
+    color: white !important;
+    margin-top:0px !important;
+	background-color:black !important;
+}
+
+
+.contact_text_div{ 
+	text-align:center; 
+	padding-top:55px; 
+	padding-bottom:55px;
+	background-color:rgba(222,179,138,0.7);
+	h3{
+		padding: 40px;
+		padding-left: 50px;
+		font-size: 20px;
+		color: white;
+	}
+}
+
