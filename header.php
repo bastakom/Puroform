@@ -47,9 +47,6 @@
 <body <?php body_class('no-outline ' . $body_classes); ?>>
 <?php wp_body_open(); ?>
 
-<!-- <div class="preloader hide-for-medium">
-	<div class="preloader__icon"></div>
-</div> -->
 
 <style>
 	<?php if ( $header_font_size ): ?>

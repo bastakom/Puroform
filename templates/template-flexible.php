@@ -3,7 +3,7 @@
  * Template Name: Flexible Page
  */
 get_header(); ?>
-	
+
 <div class="flexible-sections" id="flexible-sections">
     <?php while ( have_rows( 'flexible' ) ) : the_row(); ?>
 	    <?php get_template_part( 'parts/flexible/flexible', get_row_layout() ); ?>
@@ -18,7 +18,7 @@ get_header(); ?>
 
 <!-- <div id="load"></div>
     <div id="contents">
-           
+
     </div> -->
 
 <?php get_footer(); ?>

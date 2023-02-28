@@ -33,7 +33,7 @@ get_header(); ?>
 								<?php if  ( $shortcode = get_field( 'shortcode' )): ?>
 									<div class="contact__form">
 									<div class="cell form_contact_site" style="background-color:<?php echo $form_background ?>;">
-										<?php echo do_shortcode( $shortcode ); ?> 
+										<?php echo do_shortcode( $shortcode ); ?>
 									</div>
 									</div>
 							<?php endif; ?>
@@ -53,10 +53,6 @@ get_header(); ?>
 		<?php endif; ?>
 	</section>
 </main>
-<div class="se-pre-con">
-    <img src="https://puroform.loc/wp-content/uploads/2021/03/cropped-logo-final_gold86x88_2x.png" alt="">
-    <!-- <h4>LOADING</h4> -->
-</div>
 
 
 <style>

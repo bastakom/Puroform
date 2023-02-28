@@ -17,8 +17,8 @@ $button     = get_sub_field('button');
 ?>
 	<section class="section section-tiles section-padding section-padding-tiles"
 			 style="background:<?php echo $background; ?>"
-	> 
-	
+	>
+
 		<div class="grid-container">
 		<h2 style="text-align:center !important; margin-bottom:50px;"><?php echo $tiles_title ?></h2>
 		    <?php if ( $tiles ): ?>
@@ -69,13 +69,9 @@ $button     = get_sub_field('button');
 					    </div>
 					<?php endforeach; ?>
 				</div>
-				
+
 		    <?php endif; ?>
-<!--			--><?php //if ($projects): ?>
-<!--			<div class="see_all_projects_div">-->
-<!--				<a class="see_all_projects" href="/project">SEE ALL OUR PROJECTS <span>>></span></a>-->
-<!--			</div>-->
-<!--			--><?php //endif; ?>
+
 			<?php if ( $button ): ?>
 				<div class="see_all_projects_div">
 				    <a
@@ -89,7 +85,7 @@ $button     = get_sub_field('button');
 			<?php endif; ?>
 
 		</div>
-		
+
 	</section>
 
 	<style>
@@ -104,5 +100,5 @@ $button     = get_sub_field('button');
             cursor: default;
         }
 	</style>
-	
+
 <?php endif; ?>

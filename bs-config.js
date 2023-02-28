@@ -1,5 +1,5 @@
 const urlapi = require('url');
-const siteUrl = 'http://puro.dev-bk.loc/', // example `http://site-url.com/`
+const siteUrl = 'http://puro.bk-dev.loc/', // example `http://site-url.com/`
 	themeName = 'wp-amigo'; // example `project-name`
 const URL = urlapi.parse(siteUrl);
 

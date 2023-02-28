@@ -181,12 +181,10 @@ $(document).ready(function(){
 			data_srcset: "lazy-srcset",
 			data_sizes: "lazy-sizes",
 			skip_invisible: false,
-			class_loading: "lazyloading",
-			class_loaded: "lazyloaded",
+			class_loading: "",
+			class_loaded: "",
 		});
-		// Add tracking on adding any new nodes to body to update lazyload for the new images (AJAX for example)
 		window.addEventListener('LazyLoad::Initialized', function (e) {
-			// Get the instance and puts it in the lazyLoadInstance variable
 			if (window.MutationObserver) {
 				var observer = new MutationObserver(function(mutations) {
 					mutations.forEach(function(mutation) {
