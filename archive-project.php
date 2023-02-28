@@ -16,17 +16,17 @@ get_header(); ?>
 </div>
 
 <div class="backgorund_project" style="background: #f3f1f3">
-	
+
 	<?php if( $posts = get_field('archive_projects', 'options') ): ?>
         <?php $i = 0; ?>
         <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
             <?php $i++; ?>
             <?php setup_postdata($post); ?>
-            
+
             <?php if ( $i == 1 ): ?>
 
                 <div class="container">
-					
+
 	                <div class="grid-xd box image_background_thumb " style="height:500px!important; margin-top:50px;
 		                background-image:url('<?php echo get_the_post_thumbnail_url( $post_id, 'full' ); ?>')">
 		                <figure class="effect-marley image-width" style="height:100%;">
@@ -43,13 +43,13 @@ get_header(); ?>
 			                </a>
 		                </figure>
 	                </div>
-	
+
                 </div>
 				<div class="flex-box">
-            
+
             <?php else: ?>
-				
-					
+
+
 					<div class="grid-xd column-flex box image_background_thumb"
 					     style="height:500px!important; background-image:url('<?php echo get_the_post_thumbnail_url( $post_id, 'full' ); ?>')">
 						<figure class="effect-marley image-width" style="height:100%;">
@@ -66,34 +66,34 @@ get_header(); ?>
 							</a>
 						</figure>
 					</div>
-					
-	           
+
+
             <?php endif; ?>
-           
+
         <?php endforeach; ?>
 				</div><!-- END of .flex-box -->
 
 	    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-		
+
 	<?php else: ?>
-	
+
 <!--		/////////////////////////////////////////////////-->
-	
+
 		<div class="container">
             <?php
 
             $args = array(
                'orderby' => 'date',
                'post_type' => 'project',
-               'posts_per_page' => '1',
+               'posts_per_page' => '3',
             );
             $the_query = new WP_Query( $args );
 		    $url = get_the_post_thumbnail_url(get_the_ID(),'full');
             ?>
 
             <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-	
-	
+
+
 	            <div class="grid-xd box image_background_thumb " style="height:500px!important; margin-top:50px;
 		            background-image:url('<?php echo get_the_post_thumbnail_url( $post_id, 'full' ); ?>')">
 		            <figure class="effect-marley image-width" style="height:100%;">
@@ -113,17 +113,17 @@ get_header(); ?>
 
 
 		    <?php endwhile; else: ?>
-          
+
                 <?php endif; wp_reset_query();  ?>
 		</div>
-		
+
 		<div class="flex-box">
             <?php
 
             $args = array(
                'orderby' => 'date',
                'post_type' => 'project',
-               'posts_per_page' => '4',
+               'posts_per_page' => '100',
                'offset' => '1',
             );
             $the_query = new WP_Query( $args );
@@ -134,6 +134,7 @@ get_header(); ?>
 
 	            <div class="grid-xd column-flex box image_background_thumb"
 	                 style="height:500px!important; background-image:url('<?php echo get_the_post_thumbnail_url( $post_id, 'full' ); ?>')">
+					 test
 		            <figure class="effect-marley image-width" style="height:100%;">
 			            <a href="<?php the_permalink() ?>">
 				            <figcaption style="align-self: center; text-align:center !important; ">
@@ -148,14 +149,14 @@ get_header(); ?>
 			            </a>
 		            </figure>
 	            </div>
-	            
+
       	     <?php endwhile; else: ?>
-          
+
     	     <?php endif; wp_reset_query();  ?>
 		</div>
-		
+
 	<!--		/////////////////////////////////////////////////-->
-	
+
 	<?php endif; ?>
 
 </div>
